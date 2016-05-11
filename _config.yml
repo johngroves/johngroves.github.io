@@ -1,0 +1,12 @@
+# Site settings
+title: John Groves
+email: johngroves310@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://johngrov.es" # the base hostname & protocol for your site
+twitter_username: grovesjohn
+github_username:  johngroves
+
+# Build settings
+markdown: kramdown
