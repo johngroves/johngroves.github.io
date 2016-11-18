@@ -5,8 +5,8 @@
 	background-repeat:no-repeat;
 	display: inline-block;
 	position: absolute;
-    -webkit-animation: fall .4s linear infinite;
-    -moz-animation: fall .4s linear infinite;
+    -webkit-animation: fall 3s linear infinite;
+    -moz-animation: fall 3s linear infinite;
 }
 .rain {
 	overflow: hidden;
