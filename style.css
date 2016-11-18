@@ -5,13 +5,16 @@
 	background-repeat:no-repeat;
 	display: inline-block;
 	position: absolute;
-    -webkit-animation: fall .63s linear infinite;
-    -moz-animation: fall .63s linear infinite;
+    -webkit-animation: fall 1s linear infinite;
+    -moz-animation: fall 1s linear infinite;
+}
+.rain {
+	overflow: hidden;
 }
 
 @-webkit-keyframes fall {
-	to {margin-top:900px;}
+	to {margin-top:2000px;}
 }
 @-moz-keyframes fall {
-	to {margin-top:900px;}
+	to {margin-top:2000px;}
 }
