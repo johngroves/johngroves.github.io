@@ -1,7 +1,7 @@
 .drop {
 	height: 32px;
 	width: 32px;
-	background:url('turkey.png');
+	background-image:url('turkey.png');
 	background-repeat:no-repeat;
 	display: inline-block;
 }
