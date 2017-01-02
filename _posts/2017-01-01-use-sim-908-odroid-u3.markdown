@@ -160,5 +160,10 @@ This command starts a communication with the modem. If there is not an 'OK' resp
 
 * Use `tail -f /var/log/syslog | grep pppd` to monitor the PPPDs logs.
 
-## Hardware Connections:
+## To close the connection:
+
+* Use `poff <provider>`
+
+### Hardware Connections:
+
 ![Odroid U3 SIM 908](http://johngrov.es/img/odroidu3.jpg)
