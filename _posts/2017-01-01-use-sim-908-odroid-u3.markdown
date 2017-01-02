@@ -22,7 +22,7 @@ For this guide, I'm using the Adafruit Fona SIM 908 breakout board, and an Odroi
 
 ## Automatic Set-up :
 
-* Download this [file]().
+* Download this [file](https://gist.github.com/johngroves/2ac7f2be190e5c29f3c36a35745cca97#file-sim908-sh).
 
 * Run `sh sim908.sh` in a terminal window.
 
