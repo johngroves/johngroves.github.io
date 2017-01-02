@@ -1,6 +1,6 @@
 .drop {
-	height: 32px;
-	width: 32px;
+	height: 128px;
+	width: 128px;
 	background-image:url('turkey.png');
 	background-repeat:no-repeat;
 	display: inline-block;
@@ -10,7 +10,7 @@
 }
 .rain {
 	overflow: hidden;
-	width:100%;
+	width:80%;
 }
 
 @-webkit-keyframes fall {
