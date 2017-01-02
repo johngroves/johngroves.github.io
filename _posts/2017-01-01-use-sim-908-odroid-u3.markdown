@@ -10,7 +10,7 @@ author: john
 # Using the SIM 908 with the Odroid U3
 
 The Odroid U3 is a powerful and compact linux computer powered by the Samsung Exynos Prime Cortex-A9 Quad Core processor. The board's low cost and impressive specifications make it a perfect platform for embedded devices with significant computational needs. 
-I'm using the board as part of the logic system in an autonomous marine surface vehicle, and needed low-cost solution for remote data transmission. For my purposes, the vehicle will not likely need to transmit or receive data outside of the range of a typical cell connection, so GPRS was struck a perfect balance between transmission range and cost-effectiveness.  
+I'm using the board as part of the logic system in an autonomous marine surface vehicle, and needed low-cost solution for remote data transmission. For my purposes, the vehicle will not likely need to transmit or receive data outside of the range of a typical cell connection, so GPRS struck a perfect balance between transmission range and cost-effectiveness.  
 
 The SIM 908 is a quad-band GSM/GPRS module with integrated GPS. This module was a great fit for my project, but unfortunately no guides existed for integrating the module with the Odroid U3. 
 This guide aims to fill this void, and can serve as a reference for those hoping to integrate the SIM 908 module with other Exynos / Snapdragon based embedded computers.
