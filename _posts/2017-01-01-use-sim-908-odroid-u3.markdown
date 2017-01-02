@@ -3,6 +3,7 @@ layout: post
 title:  "Using the SIM 908 with the Odroid U3"
 date:   2017-01-01 16:35:52
 categories: hardware
+author: john
 ---
 
 
