@@ -53,7 +53,6 @@ These configurations should be stored in the peer connection directory `/etc/ppp
 
 connect "/usr/sbin/chat -v -f /etc/chatscripts/gprs -T wholesale"
 
-# MUST CHANGE: Uncomment the appropriate serial device for your platform below.
 # The Odroid U3's UART port is part of GPIO #1, and named "ttySAC0"
 
 /dev/ttySAC0
@@ -86,7 +85,7 @@ local
 #### Creating a GPRS Chat Script :
 
 The GPRS chat script will dialogue with the modem and includes scripts to provide a SIM code and connection behaviors.
-
+This script should be saved in the chat scripts directory, with the name `gprs`, `/etc/chatscripts/gprs`.
 
 ```
 # Abort the chat script on the following conditions
@@ -161,3 +160,5 @@ This command starts a communication with the modem. If there is not an 'OK' resp
 
 * Use `tail -f /var/log/syslog | grep pppd` to monitor the PPPDs logs.
 
+## Hardware Connections:
+![Odroid U3 SIM 908](http://johngrov.es/img/odroidu3.jpg)
