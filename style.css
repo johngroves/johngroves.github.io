@@ -10,7 +10,7 @@
 }
 .rain {
 	overflow: hidden;
-	width:80%;
+	width:100%;	
 }
 
 @-webkit-keyframes fall {
