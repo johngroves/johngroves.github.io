@@ -1,8 +1,5 @@
 .drop {
-	height: 156px;
-	width: 128px;
-	background-image:url('cocktail.png');
-	background-repeat:no-repeat;
+	font-size:40;	
 	display: inline-block;
 	position: absolute;
     -webkit-animation: fall 5s linear infinite;
