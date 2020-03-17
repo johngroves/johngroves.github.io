@@ -28,8 +28,8 @@ function randRange( minNum, maxNum) {
 function createRain() {
 
 	for( i=1;i<nbDrop;i++) {
-	var dropLeft = randRange(0,1600);
-	var dropTop = randRange(-2000,0);
+	var dropLeft = randRange(0,screen.availWidth);
+	var dropTop = randRange(-screen.availHeight,0);
 
 	$('.rain').append('<div class="drop" id="drop'+i+'">😷</div>');
 	$('#drop'+i).css('left',dropLeft);
