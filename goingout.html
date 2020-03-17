@@ -1,14 +1,28 @@
 <! DOCTYPE html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 
 </head>
 <section class="rain">
-<body style="text-align:center; margin-top:280px;font-family:Open Sans;background-color:#fff;overflow: hidden">
-<h1 style='font-size:70px; color:#000'>Is John Going Out Tonight?</h1>
-<h2 style="font-size:65px; color:#c0392b">No!</h2><br>
+<body>
+<div id="topbox" style="text-align:right; margin-right:40px; margin-top:40px">
+	<input type="checkbox" id="dark-toggle" data-toggle="toggle" data-on="🌙" data-off="💡" data-onstyle="primary">
+</div>	
+<h1 id="primary-text" style='font-size:70px; margin-top:240px'>Is John going out tonight?</h1>
+<h2 id="secondary-text" style="font-size:65px; color:#c0392b">No!</h2><br>
 
 </section>
 <h3 style="color:#ecf0f1; font-size:0px"></h3><!--
@@ -16,6 +30,10 @@
 
 </body>
 <script>
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 // number of drops created.
 var nbDrop = 15; 
 
@@ -40,6 +58,12 @@ function createRain() {
 // Make it rain
 createRain();
 
+$(function() {
+    $('#dark-toggle').change(function() {
+	  console.log("Dark Mode");
+      darkMode();
+    })
+})
 
 </script>
 </html>
