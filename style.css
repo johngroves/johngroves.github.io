@@ -35,4 +35,8 @@ body {
 	background: #616161; 
 }
 
-.toggle, .toggle-on, .toggle-off { border-radius: 30px; }
+.toggle, .toggle-on, .toggle-off { 
+	border-radius: 30px; 
+	font-size: 30px;
+	text-align: center;
+}

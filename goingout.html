@@ -18,8 +18,8 @@
 </head>
 <section class="rain">
 <body style="font-family:Open Sans">
-<div id="topbox" style="text-align:right; margin-right:40px; margin-top:40px">
-	<input type="checkbox" id="dark-toggle" data-size="large" data-toggle="toggle" data-on="🌙" data-off="💡" data-onstyle="primary">
+<div id="topbox" style="text-align:right; margin-right:40px; margin-top:20px">
+	<input type="checkbox" id="dark-toggle" data-height="50" data-width="80" data-toggle="toggle" data-on="🌙" data-off="💡" data-onstyle="primary">
 </div>	
 <h1 id="primary-text" style='font-size:70px; margin-top:240px'>Is John going out tonight?</h1>
 <h2 id="secondary-text" style="font-size:65px; color:#c0392b">No!</h2><br>
@@ -59,8 +59,7 @@ function createRain() {
 createRain();
 
 $(function() {
-    $('#dark-toggle').change(function() {
-	  console.log("Dark Mode");
+    $('#dark-toggle').change(function() {	
       darkMode();
     })
 })
